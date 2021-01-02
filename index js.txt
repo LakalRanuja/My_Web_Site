@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Core</title>
+</head>
+<body>
+<h1>JS Core</h1>    -
+
+
+<script>
+    //output
+    /*   console.log("Hello");
+
+       alert("Hello there");
+
+IJSE";       document.write("hellooooooooooo");*/
+
+
+    // comments
+
+    //console.log("Hello try to comment me");
+
+    /*console.log("A");
+    console.log("B");
+    console.log("C");
+    console.log("D");
+    */
+
+    // var myName = "IJSE";
+    // console.log(myName);
+
+
+    //loos typing and dynamic typing
+    /*    var myName = "IJSE";
+        typeof myName;
+        // "string";
+
+        myName = 100;
+        // 100;
+        typeof myName;
+        // "number";
+
+        myName = true;
+        // true;
+        typeof myName;
+        // "boolean"
+        */
+
+
+
+    // declarations types
+    //  var
+    //  let
+    // const
+
+
+    // var declaration
+    //support dynamic typing
+    //can duplicate identifier
+    //no scope
+
+    /*   var abc = 100;
+       abc = 300;
+       // 300
+       abc = "ABC";
+       // "ABC"
+       typeof abc;
+       // "string"
+       var abc = "D";
+       var abc = 100;
+
+
+       abc;
+       // 100
+       var age = 30;
+       {
+           console.log(age);//valid
+       }
+
+
+       {
+           var name = "Dasun";
+       }
+       console.log(name);//valid*/
+
+
+    // let declaration
+    //support dynamic typing
+    //cannot duplicate identifier
+    //scope satisfied
+
+    // let myName = "Dasun";
+    // typeof myName;
+    // // "string"
+    // myName = 100;
+    // // 100
+    //
+    // typeof myName;
+    // // "number";
+    //
+    // let age = 10;
+    // // let age = 20;//error
+    //
+    // let name = "IJSE";
+    // {
+    //     console.log(name);//valid
+    // }
+    // //////////////////////////////
+    // {
+    //     let address = "IJSE";
+    // }
+    // console.log(address);
+    // ////////////////////////
+    // {
+    //     let address = "IJSE";
+    //     console.log(address);//valid
+    // }
+
+
+    /*    // const decalration
+        //read only values
+        //scope satisfied
+
+        const age=10;
+        // age=20; //error
+        {
+            console.log(age);
+        }
+
+        {
+
+            const a="Hello";
+        }
+
+        console.log(a);//error*/
+
+
+
+    //variables
+    // case sensitive
+    // a-z characters
+    // _ and $ can be apply
+    //numbers can be apply for the second character of the variable
+
+    /*    let aB = 100;
+        let ab = 200;
+        // let 2ab=100;//error
+        let z = 100;
+        let _z = 100;
+        let $_z = 100;
+        let a10 = 100;
+        */
+
+
+    // scopes
+    // Global Scope
+    //local scope
+
+
+    /*    // global scope
+        var myName="IJSE";
+        let age=10;
+
+
+        // local scope
+        {
+            let a=10;
+            let b=10;//local scope
+
+            console.log(a);
+        }
+        */
+
+
+    // Hoisting
+    // varible hoisting
+    //function Hoisting
+
+
+    // Variable Hoisting
+    /* console.log(x);//undefined
+
+     var x=100;
+     console.log(x);//100
+
+     console.log(g);//undefined but no error
+     var g=200;
+
+     ////////////////////////////////
+     console.log("First Console -"+m);
+     var m=200;
+     console.log("Second Console -"+m);
+     // VM1111:1 First Console -undefined
+     // VM1111:12 Second Console -200
+     //////////////////////////////////
+
+     ///////////////////////////////////
+     console.log("First Console -"+f);
+     var mc=200;
+     console.log("Second Console -"+f);
+     ////////////////////////////////////*/
+
+
+    // console.log(x);
+    // var x = 100;
+    // console.log(x);
+
+
+    // Function Hoisting
+    /*    getMyName();
+
+        function getMyName() {
+            console.log("My Name is IJSE");
+        }*/
+
+
+
+    // Data Types in JS
+    // String
+    // Boolean
+    //Number
+    //Null
+    //Undefined
+
+
+    /*    // Null and Undefined
+        var myName;
+        typeof myName
+        // "undefined"
+        console.log(c);
+
+
+        var v1=null;
+        typeof v1;
+        // "object"*/
+
+
+    // String
+    /*    var str1='IJSE';
+        var str2="RWAD";
+
+        typeof str1;
+        typeof str2;
+        */
+
+
+    // length
+    // toUppserCase
+    // toLowerCase
+    // trim
+    // trimLeft
+    // trimRight
+    // split
+    // charAt
+    // charCodeAt
+    // indexOf
+    // substr
+    // substring
+
+    /*    var str1="ABCDEFGHIJKLMNOP12345abcdf";
+        str1.length
+        // 26
+
+        str1.toUpperCase();
+        // "ABCDEFGHIJKLMNOP12345ABCDF"
+
+        str1.toLowerCase();
+        // "abcdefghijklmnop12345abcdf"
+
+        var str2="       A     ";
+        str2.length
+        // 13
+        str2.trim();
+        // "A"
+
+        str2.trimLeft();
+        // "A     "
+
+        str2.trimRight();
+        // "       A"
+
+        var str3="AB-CD-MD-EF-HJ";
+        str3.split('-');
+        // (5) ["AB", "CD", "MD", "EF", "HJ"] array
+
+        */
+
+    /*    var str4="ABCDEF";
+        str4.charAt(0);
+        // "A"
+
+        str4.charAt(0);
+        // "A"
+
+        str4.charCodeAt(0);
+        // 65
+
+        str4.indexOf('G');
+        // -1
+
+        var str5="abcdefghijklmn";
+        str5.substr(5,2);
+        // "fg"
+        */
+
+
+    // // Boolean
+    // var bool=false;
+    // var bool2=true;
+    // typeof bool;
+    // // "boolean"
+    // typeof bool2;
+    // // "boolean"
+    //
+
+    //Numbers
+
+    // Intergers
+    //Decimal 10
+    //Octal 8
+    //Binary 2
+    //HexDecimal 16
+
+    //Floting Point
+
+    /*
+        var integer = 10;
+        var decimal = 100;
+        var octal = 0o23;
+        var binary = 0b1010;
+        var hexDecimal = 0xA;
+
+        var flotingPoint = 10.23;
+
+        typeof integer;
+        typeof decimal;
+        typeof octal;
+        typeof binary;
+        typeof hexDecimal;
+        typeof flotingPoint;
+        */
+
+
+    // var name="Danuka";
+
+    //Objects
+    //function base (Constructor base)
+    //Literal Base Objects
+
+
+    //Literal Base Objects
+    //named value container
+    /*
+        var myDetails = {
+            "id": "C001", //properties
+            "name": "Dasun",
+            "age": 10,
+            "state": false
+        };
+
+        typeof myDetails.id;
+        myDetails.name;
+        myDetails.age;//dot notation
+
+        myDetails['name'];//bracket notation
+
+    */
+
+    // js Objects properties can be added dinamically
+    /*    var test={
+
+        }
+    // ------------------------
+        test.id="C001";
+        // "C001"
+
+        test.name="Dasun";
+        // "Dasun"
+
+        test
+        // {id: "C001", name: "Dasun"}
+
+        test.id
+        // "C001"
+
+        // --------------------------
+        delete test.id;
+
+        test
+        // {name: "Dasun"}*/
+
+
+    // we can also add methods inside objects
+    /*
+        var customer = {
+            'id': 'C001',
+            'name': 'Nimal',
+            'getMyName': function () {
+                console.log("My Name Is Nimal");
+            }
+        };
+        customer.getMyName();
+
+        //dynamically add a method to a object
+        customer.getMyID = function () {
+            console.log("My ID is C001");
+        };
+
+        customer
+        // {id: "C001", name: "Nimal", getMyName: ƒ, getMyID: ƒ}
+    */
+
+
+
+    // Array in JS
+    // var array = [];//literal base array
+    // var array2 = new Array(); //constructor base array
+
+    //pop();
+    //push();
+    //shift()
+    //unshift()
+    //slice();
+    //splice();
+    //reverse();
+    //length
+
+
+    // var ar1=[10,20,30,"A",true,false,10.34,"IJSE",'RWAD'];
+    // var ar2=new Array(10,20,30,"A",true,false,10.34,"IJSE",'RWAD');
+
+
+    // var ar = [10, 20, 30, 40, 50];
+
+    //remove the last indexed value of a array
+    // method: pop();
+    // ar.pop();
+
+    //add value to the last index
+    /* ar.push("M");
+
+     ar.push("G");
+     //we can add multiple values to the last index
+     ar.push("R", "F");
+
+     //remove first index value
+     ar.shift();
+
+     ar.shift();*/
+
+    //can add value to the first index
+    // ar.unshift("A");
+
+    //can add value to the first index
+    // ar.unshift("B");
+
+    //can remove a indexed value from the index number
+    // ar.splice(0,1);
+
+    //can copy a array elements to a new reference
+    // (can give a range also from index numbers)
+    // var newArray=ar.slice();
+    // var newArray = ar.slice(0, 5);
+
+
+    // Function in JS
+
+    /*   function getMyDetails(name) {
+           console.log("My Name is " + name);
+       }
+
+       function getMyDetails(id, name) {
+           console.log("My Name is " + name + " " + "My ID is " + id);
+       }
+
+
+       getMyDetails("C001");
+   */
+    // ----------------------
+
+
+    /*
+        function test() {
+            console.log(arguments[0]);
+            console.log(arguments[1]);
+        }
+
+        test("C001", "Dasun", "Galle", 10, 20, 30, 50);
+    */
+
+
+    /*    function test2(id, name) {
+            console.log(id);
+            console.log(name);
+        }
+
+        test2("C001", "Dasun",1,2,3);*/
+
+
+    // two types of functions
+
+    // declaration
+    // expression
+
+
+    /*    //declarations
+        function getMyDetails() {
+            console.log("My name is IJSE");
+        }
+
+
+        //expressions
+        var getMyName = function () {
+            return "Dasun";
+        };
+        var name = getMyName();*/
+
+
+    // nestend function
+
+    // function getCustomer() {
+    //     var id = "C001";
+    //     var name = "IJSE";
+    //
+    //     //nested function
+    //     function getID() {
+    //
+    //     }
+    //
+    //
+    //
+    //
+    // }
+
+
+    /*    function mainMethod(){
+            console.log("Main method called");
+            nestedMethod();
+            function nestedMethod(){
+                console.log("Nested method is called");
+            }
+        }
+        mainMethod();*/
+
+    //
+    // function mainMethod(){
+    //     var id="C001";
+    //     let name="Dasun";
+    //
+    //     console.log("Main method called");
+    //
+    //     nestedMethod();
+    //     function nestedMethod(){
+    //         console.log(id,name);
+    //         console.log("Nested method is called");
+    //     }
+    // }
+    // mainMethod();
+
+
+    // function mainMethod(){
+    //     console.log("Main method called");
+    //     nestedMethod();
+    //     function nestedMethod(){
+    //         var id="C001";
+    //         let name="Dasun";
+    //         console.log("Nested method is called");
+    //     }
+    //     console.log(id,name);
+    // }
+    //
+    // mainMethod();
+
+
+    // loops and iteration
+    // for loop
+    // while loop
+    // do while
+
+    //for in
+    //for of
+    //for each
+
+
+    //for loop
+    // for(var i=0;i<10;i++){
+    //     console.log(i);
+    // }
+
+    //while loop
+    // var i=0;
+    // while(i<10){
+    //     i++;
+    //     console.log(i)
+    // }
+
+    // do while
+    // var i = 0;
+    // do {
+    //     i++;
+    //     console.log(i);
+    // } while (i < 10);
+
+
+    // var array = [10, 20, 30, 40, 50, 60];
+    // for(var i of array){
+    //     console.log(i);
+    // }
+
+    // for (var i in array) {
+    //     console.log(i);
+    // }
+
+    // array.forEach((v) => {
+    //     console.log(v);
+    // });
+
+
+    /*
+        //arrow function
+        var test = () => {
+            return 10;
+        };
+        test();
+    */
+
+
+    // Controll Structures
+    // if
+    // else
+    // else if
+    // switch
+    // ternary operator
+
+    /*
+        if (false) {
+            console.log("Condition is true");
+        } else {
+            console.log("Condition is false")
+        }*/
+
+    /*    var source = 2;
+
+        if (source == 1) {
+            console.log("Condition is 1");
+        } else if (source == 2) {
+            console.log("Condition is 2");
+        } else if (source == 3) {
+            console.log("Condition is 3")
+        } else {
+            console.log("Condition is nothing")
+        }*/
+
+    //switch case
+    /*
+        var source = "CMJD";
+        switch (source) {
+            case "IJSE":
+                console.log("Case is IJSE");
+                break;
+            case "RWAD":
+                console.log("Case is RWAD");
+                break;
+            case "CMJD":
+                console.log("Case is CMJD");
+                break;
+            default:
+                console.log("Case is Default");
+        }
+    */
+
+
+    // ternary operator
+    // var response = (10 > 20) ? 10 : 20;
+
+
+    /*   var num1 = "100";
+       var num2 = 200;
+       var num3=parseInt(num1);
+       // parseFloat();
+       var tototal = num3 + num2;
+       console.log(tototal);*/
+
+
+    // var number=100;
+    // number.toString();
+
+
+    // Object Oriented Programming in JS
+    //what we can do with properties of a object
+    /*    var ob = {
+            'id': 'C001'
+        };
+
+        //can add a new property laiter
+        ob.name = 'Kasun';
+
+        //can get the keys of object properties
+        Object.keys(ob);
+
+        //can delete object properties
+        delete ob.id;
+
+        //can change properties values
+        ob.id = "C002";*/
+
+
+    //then how to chanage this as we want
+    // Property Descriptors
+    // Enumerable
+    // Configurable
+    // Writable
+    // Value
+
+
+    // Writable =false
+    /*  var ob={
+          'id':'C001'
+      }
+
+      Object.getOwnPropertyDescriptor(ob,'id'); //view the descriptors
+      // {value: "C001", writable: true, enumerable: true, configurable: true}configurable: trueenumerable: truevalue: "C001"writable: true__proto__: Object
+
+      //change the descriptors
+      Object.defineProperty(ob,'id',{
+          writable: false
+      });
+
+
+      Object.getOwnPropertyDescriptor(ob,'id');
+      // {value: "C001", writable: false, enumerable: true, configurable: true}
+
+      ob.id="C002";//try to chanage
+
+      ob.id
+      // "C001" but not chanage*/
+
+    // can we get keys
+    // Object.keys(ob); //can
+
+    //can we delete
+    // delete ob.id; //can
+
+
+    // Enumerable =false
+
+    /*  ob.id = "C001";
+      // "C001"
+
+      Object.getOwnPropertyDescriptor(ob, 'id');
+      // {value: "C001", writable: true, enumerable: true, configurable: true}
+
+      //changing both descriptors to false
+      Object.defineProperty(ob, 'id', {
+          writable: false,
+          enumerable: false
+      });
+
+
+      Object.getOwnPropertyDescriptor(ob, 'id');
+      // {value: "C001", writable: false, enumerable: false, configurable: true}
+
+      ob.id = 1;//try to chanage
+
+      Object.keys(ob);//try to get keys
+      // ["name"] // key id is missing
+
+      //delete..?
+      delete ob.id; //possible
+
+      //can get keys of a object in this way too
+      //alternative for Object.keys();
+      for (var i in ob) {
+          console.log(i);
+      }
+  */
+
+
+
+
+    // configurable =false
+    /* var ob = {
+         'id': 'C001'
+     };
+
+     Object.getOwnPropertyDescriptor(ob, 'id');
+     // {value: "C001", writable: true, enumerable: true, configurable: true}
+
+     //changing all descriptors to false
+     Object.defineProperty(ob, 'id', {
+         configurable: false,
+         enumerable: false,
+         writable: false
+     });
+
+     //checking again
+     Object.getOwnPropertyDescriptor(ob, 'id');
+     // {value: "C001", writable: false, enumerable: false, configurable: false}
+
+     //cannot change the value
+     ob.id = 'C';
+     // "C";
+
+     //cannot get the keys also
+     Object.keys(ob);
+
+     //cannot delete also
+     delete ob.id
+     // false*/
+
+
+
+    // Object properties
+    //data properties
+    //accsessor properties
+
+    //object
+    //data properties
+    /* var customer = {
+         'id': 'C001',
+         'name': 'Dasun',
+         'age': 10
+     };
+
+     Object.getOwnPropertyDescriptors(customer);
+
+
+     Object.defineProperty(customer, 'id', {
+         writable: false
+     });
+
+     Object.getOwnPropertyDescriptors(customer);*/
+
+
+
+    // accsessor properties
+    /*    var ob = {
+            'id': 'C001'//data properties
+        };
+
+        Object.defineProperty(ob, 'name', {
+            get() {
+                return name;
+            },
+            set(v) {
+                name = v;
+            }
+        });
+
+        ob.name;
+        // ""
+
+        ob.name = 'Danushka';
+        "Danushka";
+
+        ob.name;
+        "Danushka";
+
+        Object.getOwnPropertyDescriptor(ob, 'name');*/
+
+
+
+    /*
+        // accsessor properties 2 == no direct values for the properties
+        // value can be assigned by getter and setter after defined
+        var customer = {};
+        //acssessor
+        Object.defineProperty(ob, 'id', {
+            get() {
+                return id;
+            },
+            set(v) {
+                id = v;
+            },
+            enumerable: true, //default false,, we can chanage them
+            configurable: true //default false ,, we can chanage them
+            // writable:false, error // because of there is no value in accsessor properties we cannot apply this descriptor here
+            // value:100 error //accsessors dont have values when it defined
+        });
+    */
+
+
+    // Object.freeze()
+    // Object.seal();
+
+    /*
+        // SEAL
+        //configurable false in all properties..
+        //cannot add or delete any property
+        //can change values
+        //property keys are countable
+        var customer={
+            'id':'C001',
+            'name':'Nimal'
+        }
+        Object.getOwnPropertyDescriptors(customer);
+
+        Object.seal(customer);
+
+        Object.getOwnPropertyDescriptors(customer);
+
+        delete customer.id
+        // false
+
+        customer.id="C002";
+        // "C002"
+
+        Object.getOwnPropertyDescriptors(customer);
+
+        customer.age=40;
+        // 40
+
+        customer
+        // {id: "C002", name: "Nimal"}
+
+        customer.age
+
+        Object.keys(customer);*/
+
+    // Freeze
+    //cannot add or delete any property
+    //cannot change values
+    //property keys are countable
+    // var customer = {
+    //     'id': 'C001',
+    //     'name': 'Nimal'
+    // };
+    //
+    // Object.getOwnPropertyDescriptors(customer);
+    //
+    // Object.freeze(customer);
+    //
+    // Object.getOwnPropertyDescriptors(customer);
+    //
+    // customer.id = 100;
+    //
+    // Object.getOwnPropertyDescriptors(customer);
+    //
+    // delete customer.id;
+    // // false
+    //
+    // customer.age = 20;
+    // // 20
+    //
+    // customer
+    // // {id: "C001", name: "Nimal"}
+
+
+    // Constructor base Objects
+    // customer dto
+    /*   var customer = {
+           'id': 'C001',
+           'name': 'Dasun'
+       }*/
+
+    // class base
+    //prototype base
+
+
+    // function CustomerDTO(id, name, address, salary) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.address = address;
+    //     this.salary = salary;
+    // }
+    //
+    // var customer = new CustomerDTO("C001", "Dasun", "Galle", 1000);
+    // customer.id
+    // "C001"
+
+    // customer.name
+    // "Dasun"
+
+    // customer.address
+    // "Galle"
+
+    // Object.getOwnPropertyDescriptors(customer);
+
+
+    // add encapsulation
+    //step 1
+    /*function Customer(id, name, address, salary) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+
+        this.getCustomerID = function () {
+            return this.id;
+        };
+        this.setCustomerID = function (id) {
+            this.id = id;
+        }
+    }
+    var c= new Customer('C003','Dasun','Panadura',10000);
+
+
+    c.id
+    // "C003"
+
+    c.getCustomerID();
+    // "C003"
+
+    c.id='C001';
+    // "C001"
+
+    c.setCustomerID("C002");
+
+    c.getCustomerID();
+    // "C002"*/
+
+
+
+
+
+    // step 2
+    // function Customer(id, name, address, salary) {
+    //     var id = id;
+    //     var name = name;
+    //     var address = address;
+    //     var salary = salary;
+    //
+    // }
+    //
+    // var c= new Customer("C001","Kamal","Panadura",1000);
+
+
+    // step3
+    /*  function Customer(id, name, address, salary) {
+          var __id = id;
+          var __name = name;
+          var __address = address;
+          var __salary = salary;
+
+          this.getCustomerID = function () {
+              return __id;
+          };
+          this.getCustomerName = function () {
+              return __name;
+          };
+          this.getCustomerAddress = function () {
+              return __address;
+          };
+          this.getCustomerSalary = function () {
+              return __salary;
+          };
+          this.setCustomerID = function (idVal) {
+              __id = idVal;
+          };
+          this.setCustomerName = function (nameVal) {
+              __name = nameVal;
+          };
+          this.setCustomerAddress = function (addressVal) {
+              __address = addressVal;
+          };
+          this.setCustomerSalary = function (salaryVal) {
+              __salary = salaryVal;
+          }
+      }
+
+      var c1 = new Customer('C001', 'Dasun', 'Galle', 100.00);
+      var c2 = new Customer('C003', 'Kamal', 'Panadura', 200.00);*/
+
+
+    // Protypebase Inheritance
+
+
+</script>
+</body>
+</html>
+
+
+
+
+<html>
+
+function Vehicle(){
+    this.park=function(){
+        console.log("vehicle.paking");
+    }
+}
+
+car.__proto__=Vehicle.prototype;
+var c1 = new car();
+
+c1.park();
+
+var v1 = new Vehicle();
+
+v1.park();
+
+//////////////////////////////////////////////////////////////////////////
+
+var newOb = Object.create(Object.prototype);
+undefined
+newOb __proto__=Object.prototype
+VM2523:1 Uncaught SyntaxError: Unexpected identifier
+newOb. __proto__=Object.prototype
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+newOb.__proto__=Object.prototype
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+var a={}
+undefined
+var a={
+    'id' ='C001'
+}
+VM2581:2 Uncaught SyntaxError: Unexpected token '='
+var a={
+    'id':'C001'
+}
+undefined
+var newA = Object.create(a);
+undefined
+newA.id
+"C001"
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

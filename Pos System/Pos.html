@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pos System</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="assessts/css%20new/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .remove-all-margin-padding {
+            margin: 0 ! important;
+            padding-right: 0 ! important;
+            padding-bottom: 0 ! important;
+            overflow-x: hidden !important;
+        }
+
+        .signedIn {
+            position: relative;
+            right: 200px;
+            top: 100px;
+        }
+
+        #purchase {
+            position: relative;
+            bottom: 80px;
+            left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid remove-all-margin-padding">
+    <div class="row">
+        <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Pos System</a>
+                <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler"
+                        data-target="#navbarTogglerDemo02" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#">Other</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" placeholder="Search" type="search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <br>
+
+    <!--    ////////////////////////////////////////    -->
+
+    <div class="row">
+        <div class="col-lg-4">
+            <form>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                    <a class="navbar-brand" href="#">Invoice Details</a>
+
+                </nav>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <form>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="OrderID">Order ID</label>
+                        <input class="form-control" id="OrderID" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Date">Date</label>
+                        <input class="form-control" id="Date" type="text">
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="form-row col-5">
+                <div class="form-group col-md-9">
+                    <div class="Contact">
+                        <label for="Cust">Customer</label>
+                        <select class="form-control" id="Cust">
+                            <option selected>Nimal</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="CustID">Customer ID</label>
+                        <input class="form-control" id="CustID" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Name">Name</label>
+                        <input class="form-control" id="Name" type="text">
+                    </div>
+                </div>
+            </form>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Salary">Salary</label>
+                        <input class="form-control" id="Salary" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Address">Address</label>
+                        <input class="form-control" id="Address" type="text">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <!--/////////////////////////////////////////////////////////////////////////-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <form>-->
+
+<!--                    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">-->
+<!--                        <a class="navbar-brand" href="#">Invoice Details</a>-->
+
+<!--                    </nav>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+        <div class="col-lg-4">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <div class="Contact">
+                            <label for="Item">Item</label>
+                            <select class="form-control" id="Item">
+                                <option selected>Rice</option>
+                                <option selected>Dhal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="ItemCode">Item Code</label>
+                        <input class="form-control" id="ItemCode" type="text">
+                    </div>
+
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="ItemName">Item Name</label>
+                        <input class="form-control" id="ItemName" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Price">Price</label>
+                        <input class="form-control" id="Price" type="text">
+                    </div>
+                </div>
+            </form>
+
+
+            <form>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="QTYOnHand">QTYOnHand</label>
+                        <input class="form-control" id="QTYOnHand" type="text">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="OrderQuantity">OrderQuantity</label>
+                        <input class="form-control" id="OrderQuantity" type="text">
+                    </div>
+                </div>
+
+            </form>
+            <section>
+                <div class="signedIn">
+                    <form id="button">
+                        <button class="btn btn-primary" type="button">Save</button>
+                    </form>
+                </div>
+            </section>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Total">Total</label>
+                        <input class="form-control" id="Total" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Sub-Total">Sub-Total</label>
+                        <input class="form-control" id="Sub-Total" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Cash">Cash</label>
+                        <input class="form-control" id="Cash" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Discount">Discount</label>
+                        <input class="form-control" id="Discount" type="text">
+                    </div>
+                </div>
+            </form>
+            <section>
+                <div class="signedIn">
+                    <form id="purchase">
+                        <button class="btn btn-success" type="button">purchase</button>
+                    </form>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <section class="col-12 col-sm-12 col-md-3 col-lg-6 col-xl-12" id="custTable">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-success text-white">
+
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody id="tbl">
+            <tr>
+                <th scope="row">01</th>
+                <td>Rice</td>
+                <td>500</td>
+                <td>1kg</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <th scope="row">02</th>
+                <td>Dhal</td>
+                <td>300</td>
+                <td>500g</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <th scope="row">03</th>
+                <td>Meat</td>
+                <td>600</td>
+                <td>1.5kg</td>
+                <td>600</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+<script src="assessts/jquery-3.5.1.min.js"></script>
+<script src="assessts/js/bootstrap.min.js"></script>
+
+<script>
+
+    /////////// Add Items ////////////
+
+    $('.signedIn').click(function () {
+
+        var ItemCode = $('#ItemCode').val();
+        var ItemName = $('#ItemName').val();
+        var price = $('#Price').val();
+        var Quantity = $('#OrderQuantity').val();
+
+        var row = `<tr>
+            <th scope="row">${ItemCode}</th>
+             <td>${ItemName}</td>
+             <td>${price}</td>
+             <td>${Quantity}</td>
+        </tr>`;
+
+        $('#tbl').append(row);
+        alert(row);
+    });
+
+    ////////// Add to TextFields ///////////
+
+    $('#tbl tr').click(function () {
+        var tem = $($(this).get());
+        $('#ItemCode').val($(tem.children().get(0)).text());
+        $('#ItemName').val($(tem.children().get(1)).text());
+        $('#Price').val($(tem.children().get(2)).text());
+        $('#OrderQuantity').val($(tem.children().get(3)).text());
+    });
+
+    $('#OrderQuantity').on("keypress", function (eventData) {
+        if (eventData.key == "Enter") {
+            var prc = $('#Price').val();
+            var OrQ = $('#OrderQuantity').val();
+            var tot = prc * OrQ;
+            $('#Total').val(tot);
+
+        }
+    });
+
+    if ($('#OrderID').val().trim().length == 0) {
+        $('#OrderID').focus();
+    } else if ($('#Date').val().trim().length == 0) {
+        $('#Date').focus();
+    } else if ($('#Cust').val().trim().length == 0) {
+        $('#Cust').focus();
+    } else if ($('#CustID').val().trim().length == 0) {
+        $('#CustID').focus();
+    } else if ($('#Name').val().trim().length == 0) {
+        $('#Name').focus();
+    } else if ($('#Salary').val().trim().length == 0) {
+        $('#Salary').focus();
+    } else if ($('#Address').val().trim().length == 0) {
+        $('#Address').focus();
+    } else if ($('#Item').val().trim().length == 0) {
+        $('#Item').focus();
+    } else if ($('#ItemCode').val().trim().length == 0) {
+        $('#ItemCode').focus();
+    } else if ($('#ItemName').val().trim().length == 0) {
+        $('#ItemName').focus();
+    } else if ($('#Price').val().trim().length == 0) {
+        $('#Price').focus();
+    } else if ($('#QTYOnHand').val().trim().length == 0) {
+        $('#QTYOnHand').focus();
+    } else if ($('#OrderQuantity').val().trim().length == 0) {
+        $('#OrderQuantity').focus();
+    }
+    // }else if($('#Total').val().trim().length==0){
+    //     $('#Total').focus();
+    // }else if($('#Sub-Total').val().trim().length==0){
+    //     $('#Sub-Total').focus();
+    // }else if($('#Cash').val().trim().length==0){
+    //     $('#Cash').focus();
+    // }else if($('#Discount').val().trim().length==0){
+    //     $('#Discount').focus();
+    // }
+
+
+</script>
+</body>
+</html>

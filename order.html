@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="assessts/css%20new/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #buttons{
+            position: relative;
+            margin: auto;
+            left: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-dark bg-info">
+        <a class="navbar-brand">Orders</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+</section>
+<br>
+<form>
+    <div class="form-group col-md-4">
+        <label for="exampleFormControlInput1">Order ID</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter ID ...">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="exampleFormControlSelect1">Order Type</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>Trousers</option>
+            <option>Shirts/option>
+            <option>Jackets</option>
+            <option>Shoes</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="exampleFormControlSelect2">Order QTY</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group col-md-5">
+        <label for="exampleFormControlTextarea1">Desciption</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>
+<br>
+<section>
+    <form id="buttons">
+        <button type="button" class="btn btn-primary form-group col-sm-1">Add</button>
+        <button type="button" class="btn btn-success form-group col-md-1">Update</button>
+        <button type="button" class="btn btn-danger form-group col-md-1">Delete</button>
+    </form>
+</section>
+<br>
+<section>
+    <table class="table table-bordered table-hover">
+        <thead class="bg-secondary text-white">
+        <tr>
+            <th scope="col">Order ID </th>
+            <th scope="col">Order Type</th>
+            <th scope="col">Order QTY</th>
+            <th scope="col">Order Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">O_01</th>
+            <td>Trouser</td>
+            <td>2</td>
+            <td>Large</td>
+        </tr>
+        <tr>
+            <th scope="row">O_02</th>
+            <td>Shirt</td>
+            <td>4</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <th scope="row">O_03</th>
+            <td>Shoes</td>
+            <td>1 pair</td>
+            <td>(negotiated)</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<br>
+<footer class="card-footer text-center">
+    Privacy policy <br>  ©2020 Lakal Ranuja
+</footer>
+</body>
+</html>
